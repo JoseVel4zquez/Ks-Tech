@@ -1,0 +1,90 @@
+<section class="bg-dark">
+   <div class="row g-0">
+      <div class="col-lg-7">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <%= image_tag 'AlexaBliss.JPG', class: 'd-block w-100'%>
+              
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'Lanitas.png', class: 'd-block w-100'%>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'ventanta.png', class: 'd-block w-100'%>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex felx-column  min-vh-100">
+        <!--logo-->
+        <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 nb-auto">
+          <%=image_tag 'logo.jpg' , class: 'img-fuid ', width: '200' %>
+        </div>
+        <!--logo-->
+        <!--Formulario-->
+        <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+          <h1 class="text-white font-weight-bold mb-4">Sign up</h1>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'mb-5') do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
+
+                <div class="mb-4">
+                  <%= f.label :email, class: 'form-label text-white' %>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', id: 'exampleInputEmail1', placeholder: 'email' %>
+                </div>
+
+                <div class="mb-4">
+                  <%= f.label :password, class: 'form-label text-white' %>
+                  
+                  <%= f.password_field :password, autocomplete: "new-password", class: 'form-control', id: 'exampleInputPassword1', placeholder: 'Password' %>
+                </div>
+
+                <div class="mb-4">
+                  <%= f.label :password_confirmation, class: 'form-label text-white' %>
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control', placeholder: 'Confirm Password' %>
+                </div>
+
+                <div class="actions">
+                  <%= f.submit "Sign up", :class => 'btn btn-warning nb-2 w-100' %>
+                  <div id="emailHelp" class="form-text "><%= render "devise/shared/links" %></div>
+                  
+                </div>
+            <% end %>
+         
+        </div>
+      </div>
+      
+    </div>
+    
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

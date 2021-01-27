@@ -1,0 +1,257 @@
+<!--carrousel-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag  "slide01.jpg", class: 'd-block w-100' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag  "slide02.jpg", class: 'd-block w-100' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag  "slide03.jpg", class: 'd-block w-100' %>
+    </div>
+  </div>
+</div>
+
+<!--ribbon-->
+<div id="ribbon" class="container-fluid">
+    <div id="birthday" class="container w-50 pl-5 rounded-lg">
+        <div class="row align-items-center">
+            <div class="col-sm p-3"> 
+                <%= image_tag  "image01.png" , class: 'w-75 mx-auto d-block'%>
+            </div>
+            <div class="col-sm p-3 text-light text-center">
+                <p class="text-warning h3">Today is</p>
+                <h4 class="text-shadow h3">samsons birthday</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--separador ribbon-->
+<div id="separator-ribbon">
+    <div class="content bg-warning"></div>
+<div>
+
+<!--games-->
+<div id="games">
+    <div class="container-md p-5">
+        <div class="row pt-5">
+            <h3 class="text-center pb-5 pt-5 h1">Animal Corssing games</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <%= image_tag  "card01.png" %>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <%= image_tag  "card02.jpg" %>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <%= image_tag  "card03.jpg" %>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5 ">
+            <div class="col" style="color: var(--bs-blue)">
+                <h3 class="text-center">More games on Nintendo.com</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <a href="#">Nintendo switch</a>
+            </div>
+            <div class="col-2">
+                <a href="#">Nintendo 3DS</a>
+            </div>
+            <div class="col-1">
+                <a href="#"> Wii U</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Mobile</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Retro</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--separador amiibos-->
+<div id="separator-amiibos">
+    <div class="content bg-success">
+
+    </div>
+</div>
+<!--amiibos-->
+<div id="amiibos" class="px-5 pb-5 bg-success">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center text-white text-shadow">Featured amiibo figure</h2>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-2  row-cols-md-4">
+            <div class="col-sm">
+                <%= image_tag  "figure01.png", class: 'w-100 amiibo'%>
+                <div class="text-center amiibo-name h5 p-2">
+                   <span class="amiibo-name"> Isabelle</span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <%= image_tag  "figure02.png", class: 'w-100 amiibo'%>
+                <div class="text-center amiibo-name h5 p-2">
+                   <span class="amiibo-name"> Isabelle</span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <%= image_tag  "figure03.png", class: 'w-100 amiibo'%>
+                <div class="text-center amiibo-name h5 p-2">
+                   <span class="amiibo-name"> Isabelle</span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <%= image_tag  "figure04.png", class: 'w-100 amiibo'%>
+                <div class="text-center amiibo-name h5 p-2">
+                   <span class="amiibo-name"> Isabelle</span>
+                </div>
+            </div>
+            
+        </div>
+        <div  class="row py-5">
+            <div class="col text-center">
+                <a href="" class="link-dark">
+                    <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bol"> view amiibo catalog</button>
+                </a>
+            </div>
+        </div>
+        <div id="separator-amiibos-footer">
+
+        </div>
+    </div>
+</div>
+<!--play nintendo-->
+<div id="play">
+    <div class="container-sm p-5">
+        <div class="row">
+            <h3 class="text-center h1">Isabelle and friends on play Nintendo</h3>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3 d-none d-md-block">
+                <%=image_tag 'isabelle.png', class: 'w-100'%>
+            </div>
+            <div class="col-9"> 
+                <div class="row">
+                    <div class="col p-1">
+                        <!--CARD-->
+                        <div class="card bg-primary text-white" style="max-width: 540px;">
+                        
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <%=image_tag 'ph-01.jpg', class: 'w-100'%>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        
+                        <!--card-->
+                    </div>
+                    <div class="col p-1">
+                        <!--CARD-->
+                        <div class="card bg-success text-white" style="max-width: 540px;">
+                        
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <%=image_tag 'ph-01.jpg', class: 'w-100'%>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">
+                        <!--CARD-->
+                        <div class="card bg-warning text-white" style="max-width: 540px;">
+                        
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <%=image_tag 'ph-01.jpg', class: 'w-100'%>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--card-->
+                        
+                        <!--card-->
+                    </div>
+                    <div class="col p-1">
+                        <!--CARD-->
+                        <div class="card bg-danger text-white" style="max-width: 540px;">
+                        
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <%=image_tag 'ph-01.jpg', class: 'w-100'%>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<!--footer-->
